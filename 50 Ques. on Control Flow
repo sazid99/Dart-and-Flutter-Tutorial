@@ -88,4 +88,29 @@ void main() {
   }
 }
 
+### ans. 3: 
+import 'dart:io';
+
+void main() {
+  print("Enter your marks: ");
+  String? input = stdin.readLineSync();
+  int marks = int.parse(input!);
+
+  if(marks <= 100 && marks >= 90){
+    print("Grade: A+");
+  } else if(marks <= 89 && marks >= 80){
+    print("Grade: A");
+  }else if(marks <= 79 && marks >= 70){
+    print("Grade: B+");
+  }else if(marks <= 69 && marks >= 60){
+    print("Grade: B");
+  }else if(marks <= 59 && marks >= 50){
+    print("Grade: C");
+  }else if(marks <= 49 && marks >= 40){
+    print("Grade: D");
+  }else{
+    print("Grade: F");
+  }
+}
+
 
