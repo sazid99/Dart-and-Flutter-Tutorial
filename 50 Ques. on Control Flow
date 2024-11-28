@@ -57,7 +57,8 @@
 50. **শপিং ডিসকাউন্ট ক্যালকুলেটর**: ডিসকাউন্ট ক্যালকুলেট করার লজিক।  
 
 
-ans. 1: 
+
+### ans. 1: 
 import 'dart:io';
 
 void main() {
@@ -68,6 +69,22 @@ void main() {
     print("Even");
   } else{
     print("Odd");
+  }
+}
+
+### ans. 2:
+import 'dart:io';
+
+void main() {
+  String? input = stdin.readLineSync();
+  int age = int.parse(input!);
+
+  if(age <= 18){
+    print('You are a minor');
+  } else if(age >18 && age <= 50){
+    print('You are an adult');
+  }else{
+    print('You are a senior');
   }
 }
 
