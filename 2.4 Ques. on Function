@@ -133,4 +133,21 @@ void main() {
 
 var result = (int num) => num * 2;
 
-999999
+999999999999999999999999999999999999999999999999999999
+ans. 9 : it should be modify later with anonymous function:
+void main() {
+  avg();
+}
+
+void avg() {
+  List<int> num = [1, 2, 3];
+  int sum = 0;
+  for (int i = 0; i < num.length; i++) {
+    sum = sum + num[i];
+  }
+  double avarage = sum/num.length;
+  print(avarage);
+}
+
+101010101010101010101010101010101010101010101010101010101010
+
