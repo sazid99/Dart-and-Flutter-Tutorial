@@ -102,4 +102,15 @@ int maxValue(int a, int b) {
   return result;
 }
 
-5555555555555555555555555555555555555555555555555555555555555555555555555555555555
+6666666666666666666666666666666666666666666666666666666666666666666666
+ans. 6:
+
+void main() {
+  userInfo("Sazid");
+}
+
+void userInfo(String name, [int age = 10]) {
+  print("My name is $name and my age is $age");
+}
+
+##########
