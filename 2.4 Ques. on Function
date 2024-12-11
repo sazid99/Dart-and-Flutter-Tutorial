@@ -124,4 +124,13 @@ void userInfo(String name, [dynamic age = "unknown"]) {
   print("My name is $name and my age is $age");
 }
 
-#####
+8888888888888888888888888888888888888888888888888888888888888
+ans. 8:
+void main() {
+  var multiply = result(2);
+  print(multiply);
+}
+
+var result = (int num) => num * 2;
+
+999999
