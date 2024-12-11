@@ -113,4 +113,15 @@ void userInfo(String name, [int age = 10]) {
   print("My name is $name and my age is $age");
 }
 
-##########
+7777777777777777777777777777777777777777777777777777777777777777777777
+ans. 7:
+
+void main() {
+  userInfo("Sazid");
+}
+
+void userInfo(String name, [dynamic age = "unknown"]) {
+  print("My name is $name and my age is $age");
+}
+
+#####
