@@ -112,3 +112,22 @@ void main() {
 }
 
 ----------------------------------------------------------------------------
+Ans. 3:
+class Rectangle {
+  int height;
+  int width;
+
+  Rectangle(this.height, this.width);
+
+  void areaOfRectangle() {
+    int area = height * width;
+    print("Area of a Rectangle is $area");
+  }
+}
+
+void main() {
+  Rectangle recArea = Rectangle(12, 10);
+  recArea.areaOfRectangle();
+}
+------------------------------------------------------------------------------
+
