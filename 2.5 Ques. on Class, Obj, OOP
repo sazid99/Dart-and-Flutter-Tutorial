@@ -178,4 +178,24 @@ void main() {
   student.studentInfo();
 }
 ------------------------------------------------------------------
+Ans. 6:
+class Book {
+  String title;
+  String author;
+  int price;
 
+  Book(this.title, this.author, this.price);
+
+  void bookDetails() {
+    print('Book title \"$title\"');
+    print('Book author \"$author\"');
+    print('Book price $price\$');
+  }
+}
+
+void main() {
+  Book book = new Book("Dart Zero to Hero", "Witson Watt", 40);
+  book.bookDetails();
+}
+
+---------------------------------------------------------------------
