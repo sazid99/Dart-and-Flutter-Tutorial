@@ -130,4 +130,27 @@ void main() {
   recArea.areaOfRectangle();
 }
 ------------------------------------------------------------------------------
+ans. 4:
+class BankAccount {
+  var balance = 0;
 
+  deposit(int depositBalance) {
+    balance = balance + depositBalance;
+  }
+
+  withdraw(int withdrawBalance) {
+    if (withdrawBalance > balance) {
+      print("Withdraw failed.Your balance is $balance.Insufficent fund.");
+    } else{
+      balance = balance - withdrawBalance;
+    }
+  }
+}
+
+void main() {
+  BankAccount account = BankAccount();
+  account.deposit(200);
+  account.withdraw(50);
+  print("Your account balance ${account.balance}");
+}
+------------------------------------------------------------------------------
