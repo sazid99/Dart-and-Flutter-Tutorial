@@ -93,3 +93,22 @@ void main() {
 }
 
 ---------------------------------------------------------------------------
+Ans. 2:
+
+class Person {
+  String name;
+  int age;
+
+  Person(this.name, this.age);
+
+  printMethod() {
+    print("My name is $name. My age is $age");
+  }
+}
+
+void main() {
+  Person userInfo = Person("Sazid", 22);
+  userInfo.printMethod();
+}
+
+----------------------------------------------------------------------------
