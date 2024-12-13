@@ -154,3 +154,26 @@ void main() {
   print("Your account balance ${account.balance}");
 }
 ------------------------------------------------------------------------------
+ans. 5:
+class Student {
+  var name;
+  var rollNumber;
+  var grade;
+
+  Student(var name, var rollNumber, var grade) {
+    this.name = name;
+    this.rollNumber = rollNumber;
+    this.grade = grade;
+  }
+
+  void studentInfo() {
+    print("Student name is $name");
+    print("Student rollNumber is $rollNumber");
+    print("Student grade is $grade");
+  }
+}
+
+void main() {
+  Student student = new Student("Sazid", 74, "A+");
+  student.studentInfo();
+}
