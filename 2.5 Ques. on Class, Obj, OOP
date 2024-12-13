@@ -275,4 +275,24 @@ void main() {
   employee.salaryBonus(5000);
 }
 ------------------------------------------------------------------------------
+Ans. 10:
+class Movie {
+  String name;
+  String director;
+  int releaseYear;
+
+  Movie(this.name, this.director, this.releaseYear);
+
+  void movieDetails() {
+    print("Movie name: $name");
+    print("Director: $director");
+    print("Release year: $releaseYear");
+  }
+}
+
+void main() {
+  Movie movie = new Movie("Lapata Ladies", "Kiran Rao", 2023);
+  movie.movieDetails();
+}
+######################################################################################
 
