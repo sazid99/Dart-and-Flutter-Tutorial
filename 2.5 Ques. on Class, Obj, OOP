@@ -70,3 +70,26 @@
 9. `Transport` অ্যাবস্ট্রাক্ট ক্লাস তৈরি করো এবং সেটি থেকে `Bus` এবং `Train` ইনহেরিট করো।  
 10. `Food` অ্যাবস্ট্রাক্ট ক্লাস তৈরি করো এবং সেটি থেকে `Pizza` ও `Burger` ইনহেরিট করো।  
 
+
+
+####################################################################################################
+class and object part: 
+ans. 1:
+class Car {
+  String? brand;
+  String? model;
+  int? year;
+
+  Car(String brand, String model, int year) {
+    this.brand = brand;
+    this.model = model;
+    this.year = year;
+  }
+}
+
+void main() {
+  var car = Car("Rang Rover", "RXGT5", 2024);
+  print(car.brand);
+}
+
+---------------------------------------------------------------------------
