@@ -225,4 +225,28 @@ void main() {
   product.discount(10);
 }
 ------------------------------------------------------------------------------------
+Ans. 8:
+class Circle {
+  dynamic radius;
+  static const double PI = 3.14;
+
+  Circle(this.radius);
+
+  void circleArea() {
+    var area = PI * (radius * radius);
+    print("Circle area: $area");
+  }
+
+  void circleCircumference() {
+    var circumference = 2 * PI * radius;
+    print("Circle circumference: $circumference");
+  }
+}
+
+void main() {
+  Circle circle = new Circle(2.5);
+  circle.circleArea();
+  circle.circleCircumference();
+}
+----------------------------------------------------------------------------
 
