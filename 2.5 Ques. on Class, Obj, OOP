@@ -199,3 +199,30 @@ void main() {
 }
 
 ---------------------------------------------------------------------
+Ans. 7:
+class Product {
+  dynamic id;
+  String name;
+  int price;
+
+  Product(this.id, this.name, this.price);
+
+  void productDetails() {
+    print("Product id: $id");
+    print("Product name: $name");
+    print("Product price: \$$price X");
+  }
+
+  void discount(int discountPercentage) {
+    var discountPrice = price - ((price * discountPercentage) / 100);
+    print("Discount price: \$$discountPrice ✓");
+  }
+}
+
+void main() {
+  Product product = new Product(12345, "chocolate", 5);
+  product.productDetails();
+  product.discount(10);
+}
+------------------------------------------------------------------------------------
+
