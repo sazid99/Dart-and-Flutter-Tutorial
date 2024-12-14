@@ -445,5 +445,97 @@ void main() {
   laptop.showLaptopPrice();
 }
 ------------------------------------------------------------------
+Ans. 6:
+import 'dart:io';
+
+class Account {
+  double balance = 0.0;
+  String _pin = "2580abc";
+
+  void set pin(String pin) {
+    _pin = pin;
+  }
+
+  String get pin {
+    return _pin;
+  }
+
+  void displayAccountInfo() {
+    print("Your Account Balance: \$$balance");
+  }
+
+  void menu() {
+    print("What do you want to do ?");
+    print("1. Deposit \n2. Withdraw \n3. Show pin \n4. Change pin \n5. Log out");
+    print("Enter 1, 2, 3 or 4 -> ");
+    funtionchoice();
+  }
+
+  void inputAndChekPassword() {
+    print("please enter your pin first to go next step -> ");
+    String? inputPin;
+    do {
+      String? inputPin = stdin.readLineSync();
+      if (_pin == inputPin) {
+        print("Welcome! \nWhat do you want to do ?");
+        print(
+            "1. Deposit \n2. Withdraw \n3. Show pin \n4. Change pin \n5. Log out");
+        print("Enter 1, 2, 3, 4 or 5 -> ");
+        funtionchoice();
+        break;
+      } else {
+        print("Incorrect Pin. Please try again! -> ");
+      }
+    } while (_pin != inputPin);
+  }
+
+  void funtionchoice() {
+    String? choiceNumber = stdin.readLineSync();
+    int intChoiceNumber = int.parse(choiceNumber!);
+
+    switch (intChoiceNumber) {
+      case 1:
+        deposit();
+        break;
+      case 2:
+        withdraw();
+        break;
+      case 5:
+        print("Logout Successful...");
+        break;
+      default:
+        print("Enter your choice within 1,2,3 or 4");
+    }
+  }
+
+  void deposit() {
+    print("Enter deposit amount ->");
+    String? inputDepositAmount = stdin.readLineSync();
+    double depositAmount = double.parse(inputDepositAmount!);
+
+    balance = balance + depositAmount;
+    displayAccountInfo();
+    menu();
+  }
+
+  void withdraw() {
+    print("Enter withdraw amount ->");
+    String? inputWithdrawAmount = stdin.readLineSync();
+    double withdrawAmount = double.parse(inputWithdrawAmount!);
+
+    balance = balance - withdrawAmount;
+    displayAccountInfo();
+    menu();
+  }
+}
+
+void main() {
+  Account account = Account();
+  account.pin = "sazid123";
+  account.displayAccountInfo();
+  account.inputAndChekPassword();
+}
+-----------------------------------------------------------------------------------
+
 
 
