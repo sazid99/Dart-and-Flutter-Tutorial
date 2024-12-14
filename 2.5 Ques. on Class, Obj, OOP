@@ -365,4 +365,39 @@ void main() {
   print("Your account balance ${account.balance}");
 }
 ------------------------------------------------------------------------------
+Ans. 3:
+
+class Car {
+  double _speed = 0;
+
+  void set speed(double speed) {
+    _speed = speed;
+  }
+
+  double get speed {
+    return _speed;
+  }
+
+  void speedUp(double addSpeed) {
+    speed = speed + addSpeed;
+  }
+
+  void speedDown(double slowSpeed) {
+    speed = speed - slowSpeed;
+  }
+
+  void showCarSpeedInfo() {
+    print("Car speed is: $speed KM/h now.");
+  }
+}
+
+void main() {
+  Car car = Car();
+  car.speedUp(20);
+  car.speedDown(5);
+  car.showCarSpeedInfo();
+}
+
+------------------------------------------------------------------
+
 
