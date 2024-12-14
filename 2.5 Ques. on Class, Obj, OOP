@@ -295,4 +295,39 @@ void main() {
   movie.movieDetails();
 }
 ######################################################################################
+Encapsulation:
+==============
+ans. 1:
+class Student {
+  int? _rollNumber;
+  String? _grade;
+
+  void set rollNumber(int rollNumber) {
+    _rollNumber = rollNumber;
+  }
+
+  int get rollNumber {
+    return _rollNumber ?? 0;
+  }
+
+  void set grade(String grade) {
+    _grade = grade;
+  }
+
+  String get grade {
+    return _grade ?? "Execution fail";
+  }
+
+  void showDetails() {
+    print("Rollnumber: $_rollNumber and Grade: $_grade");
+  }
+}
+
+void main() {
+  Student student = new Student();
+  student.rollNumber = 74;
+  student.grade = "A+";
+  student.showDetails();
+}
+----------------------------------------------------------------------
 
