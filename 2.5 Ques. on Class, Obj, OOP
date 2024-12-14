@@ -422,4 +422,28 @@ void main() {
   employee.showSalaryInfo();
 }
 ------------------------------------------------------------------------
+Ans. 5: 
+class Laptop {
+  int _price = 800;
+
+  void set discount(int discount) {
+    _price = _price - discount;
+  }
+
+  int get price {
+    return _price;
+  }
+
+  void showLaptopPrice() {
+    print("Laptop Price: \$$_price");
+  }
+}
+
+void main() {
+  Laptop laptop = Laptop();
+  laptop.discount = 20;
+  laptop.showLaptopPrice();
+}
+------------------------------------------------------------------
+
 
