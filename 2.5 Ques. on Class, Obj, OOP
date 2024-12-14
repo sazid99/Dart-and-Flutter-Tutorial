@@ -332,4 +332,37 @@ void main() {
   student.showDetails();
 }
 ----------------------------------------------------------------------
+ans. 2:
+
+class BankAccount {
+  int _balance = 0;
+
+  void set balance(int balance) {
+    _balance = balance;
+  }
+
+  int get balance {
+    return _balance;
+  }
+
+  void deposit(int depositBalance) {
+    balance = balance + depositBalance;
+  }
+
+  void withdraw(int withdrawBalance) {
+    if (withdrawBalance > balance) {
+      print("Withdraw failed.Your balance is $balance.Insufficent fund.");
+    } else {
+      balance = balance - withdrawBalance;
+    }
+  }
+}
+
+void main() {
+  BankAccount account = BankAccount();
+  account.deposit(200);
+  account.withdraw(50);
+  print("Your account balance ${account.balance}");
+}
+------------------------------------------------------------------------------
 
