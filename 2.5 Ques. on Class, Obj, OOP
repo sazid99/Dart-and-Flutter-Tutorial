@@ -399,5 +399,27 @@ void main() {
 }
 
 ------------------------------------------------------------------
+Ans. 4: 
+class Employee {
+  int _salary = 25000;
 
+  void set salary(int salary) {
+    _salary = _salary + salary;
+  }
+
+  int get salary {
+    return _salary;
+  }
+
+  void showSalaryInfo() {
+    print("Your salary: $salary taka.");
+  }
+}
+
+void main() {
+  Employee employee = new Employee();
+  employee.salary = 2000;
+  employee.showSalaryInfo();
+}
+------------------------------------------------------------------------
 
