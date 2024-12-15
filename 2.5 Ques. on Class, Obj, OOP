@@ -574,5 +574,23 @@ void main() {
   print(mobile.batteryLevel);
 }
 --------------------------------------------------------------------------------
+Ans. 9:
+class Teacher {
+  String _id = "asv123";
 
+  void set id(String id) {
+    _id = id;
+  }
+
+  String get id {
+    return _id;
+  }
+}
+
+void main() {
+  Teacher teacher = Teacher();
+  teacher.id = "sazid8090";
+  print(teacher.id);
+}
+-------------------------------------------------------------------------------
 
