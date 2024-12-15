@@ -789,6 +789,35 @@ void main() {
   Cat().makeSound();
 }
 -----------------------------------------------------------------------
+Ans. 2: 
+class Payment {
+  processPayment() {
+    print("processing generic payment....");
+  }
+}
+
+class CreditCardPayment extends Payment {
+  @override
+  processPayment() {
+    print("processing credit card payment....");
+  }
+}
+
+class PaypalPayment extends Payment {
+  @override
+  processPayment() {
+    print("processing paypal payment....");
+  }
+}
+
+void main() {
+  CreditCardPayment creditCardPayment = CreditCardPayment();
+  creditCardPayment.processPayment();
+
+  PaypalPayment paypalPayment = PaypalPayment();
+  paypalPayment.processPayment();
+}
+-------------------------------------------------------------------------------------
 
 
 
