@@ -853,5 +853,32 @@ void main() {
 }
 --------------------------------------------------------------------------------
 
+Ans. 4: 
+abstract class Bank {
+  void getInterestRate();
+}
+
+class SavingsAccount extends Bank {
+  @override
+  getInterestRate() {
+    print("For Saving Account you will receive 5% interest");
+  }
+}
+
+class FixedDepositAccount extends Bank {
+  @override
+  getInterestRate() {
+    print("For fixed deposit account you will receive 10% interest");
+  }
+}
+
+void main() {
+  SavingsAccount savingsAccount = SavingsAccount();
+  savingsAccount.getInterestRate();
+
+  FixedDepositAccount fixedDepositAccount = FixedDepositAccount();
+  fixedDepositAccount.getInterestRate();
+}
+------------------------------------------------------------------------------------------
 
 
