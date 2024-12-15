@@ -695,6 +695,36 @@ void main() {
   circle.area();
 }
 ---------------------------------------------------------------------
+Ans. 3:
+abstract class Vehicle {
+  void wheel() {
+    print("I have wheel");
+  }
+}
+
+class Car extends Vehicle {
+  @override
+  void wheel() {
+    print("I have 4 wheels");
+  }
+}
+
+class Bike extends Vehicle {
+  @override
+  void wheel() {
+    print("I have 2 wheels");
+  }
+}
+
+void main() {
+  Car car = Car();
+  car.wheel();
+
+  Bike bike = Bike();
+  bike.wheel();
+}
+------------------------------------------------------------------------
+
 
 
 
