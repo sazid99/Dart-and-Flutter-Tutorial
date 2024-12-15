@@ -536,6 +536,24 @@ void main() {
   account.inputAndChekPassword();
 }
 -----------------------------------------------------------------------------------
+Ans. 7:
+class Book {
+  double _price = 0.0;
 
+  void set price(double price) {
+    _price = price;
+  }
+
+  double get price {
+    return _price;
+  }
+}
+
+void main() {
+  Book book = Book();
+  book.price = 20;
+  print(book.price);
+}
+-----------------------------------------------------------------------------------
 
 
