@@ -593,4 +593,23 @@ void main() {
   print(teacher.id);
 }
 -------------------------------------------------------------------------------
+Ans. 10:
+class Product {
+  int _quantity = 0;
+  void set quantity(int quantity) {
+    _quantity = quantity;
+  }
+
+  int get quantity {
+    return _quantity;
+  }
+}
+
+void main() {
+  Product product = Product();
+  product.quantity = 25;
+  print(product.quantity);
+}
+---------------------------------------------------------------------------------
+
 
