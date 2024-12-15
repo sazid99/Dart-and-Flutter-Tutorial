@@ -555,5 +555,24 @@ void main() {
   print(book.price);
 }
 -----------------------------------------------------------------------------------
+Ans. 8:
+class Mobile {
+  int _batteryLevel = 0;
+
+  void set batteryLevel(int batteryLevel) {
+    _batteryLevel = batteryLevel;
+  }
+
+  int get batteryLevel {
+    return _batteryLevel;
+  }
+}
+
+void main() {
+  Mobile mobile = Mobile();
+  mobile.batteryLevel = 80;
+  print(mobile.batteryLevel);
+}
+--------------------------------------------------------------------------------
 
 
