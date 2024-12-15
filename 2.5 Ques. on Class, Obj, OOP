@@ -31,16 +31,49 @@
 ---
 
 ### **Inheritance (10টি)**  
-1. একটি `Animal` ক্লাস তৈরি করো এবং সেটি থেকে `Dog` ও `Cat` ইনহেরিট করো।  
-2. `Shape` ক্লাস তৈরি করো এবং সেটি থেকে `Rectangle` ও `Circle` ইনহেরিট করো। প্রত্যেকটির জন্য আলাদা ক্ষেত্রফল বের করো।  
-3. `Vehicle` ক্লাস তৈরি করো এবং সেটি থেকে `Car` এবং `Bike` ইনহেরিট করো।  
-4. `Person` ক্লাস তৈরি করো এবং সেটি থেকে `Student` এবং `Teacher` ইনহেরিট করো।  
-5. `Account` ক্লাস থেকে `SavingsAccount` এবং `CurrentAccount` ইনহেরিট করো।  
-6. `Employee` ক্লাস তৈরি করো এবং সেটি থেকে `Manager` এবং `Developer` ইনহেরিট করো।  
-7. `Building` ক্লাস তৈরি করো এবং সেটি থেকে `House` এবং `Office` ইনহেরিট করো।  
-8. `Computer` ক্লাস তৈরি করো এবং সেটি থেকে `Laptop` এবং `Desktop` ইনহেরিট করো।  
-9. `Appliance` ক্লাস তৈরি করো এবং সেটি থেকে `WashingMachine` ও `Refrigerator` ইনহেরিট করো।  
-10. `Bank` ক্লাস তৈরি করো এবং সেটি থেকে `OnlineBank` এবং `BranchBank` ইনহেরিট করো।  
+
+ ১. **বেসিক Inheritance**
+   একটি `Animal` ক্লাস তৈরি করুন যাতে `name` এবং `age` প্রোপার্টি থাকবে। তারপর `Dog` এবং `Cat` নামে দুটি সাবক্লাস তৈরি করুন,
+যেগুলো `Animal` থেকে inherit করবে। প্রতিটি সাবক্লাসে `makeSound()` নামে একটি মেথড থাকবে,
+যা আলাদা আলাদা শব্দ করবে (যেমন Dog: "Bark", Cat: "Meow")।  
+
+ ২. **Constructor Overloading এবং Inheritance**
+   একটি `Person` ক্লাস তৈরি করুন যাতে `name` এবং `address` থাকবে। একটি `Employee` ক্লাস তৈরি করুন যা `Person` থেকে inherit করবে
+এবং তার মধ্যে `salary` প্রোপার্টি যোগ করুন। কনস্ট্রাক্টর ব্যবহার করে `Employee` এর সকল প্রোপার্টি ইনিশিয়ালাইজ করুন।  
+
+ ৩. **Method Overriding**
+   একটি `Shape` ক্লাস তৈরি করুন যাতে `area()` নামে একটি মেথড থাকবে। `Circle` এবং `Rectangle` নামে দুটি সাবক্লাস তৈরি করুন,
+যেগুলো `Shape` থেকে inherit করবে। `area()` মেথড ওভাররাইড করে সার্কেলের ক্ষেত্রফল এবং আয়তক্ষেত্রের ক্ষেত্রফল গণনা করুন।  
+
+ ৪. **Multilevel Inheritance**
+   একটি `Vehicle` ক্লাস তৈরি করুন, যেখানে `brand` এবং `speed` থাকবে। `Car` নামে একটি সাবক্লাস তৈরি করুন
+যা `Vehicle` থেকে inherit করবে। এরপর `ElectricCar` নামে একটি সাবক্লাস তৈরি করুন, যা `Car` থেকে inherit করবে 
+এবং `batteryCapacity` নামে একটি প্রোপার্টি থাকবে।  
+
+ ৫. **Hierarchical Inheritance**
+   একটি `Bank` ক্লাস তৈরি করুন, যেখানে `getInterestRate()` নামে একটি মেথড থাকবে। 
+`SBI`, `HDFC` এবং `ICICI` নামে তিনটি সাবক্লাস তৈরি করুন, যেগুলো আলাদা আলাদা ইন্টারেস্ট রেট প্রদান করবে।  
+
+ ৬. **Dynamic Method Dispatch**
+   একটি `Animal` ক্লাস তৈরি করুন। তারপর একটি `Dog` এবং `Cat` সাবক্লাস তৈরি করুন। একটি রেফারেন্স টাইপের ভেরিয়েবল ব্যবহার
+করে সাবক্লাসগুলোর মেথড কল করুন (dynamic method dispatch প্রয়োগ করে)।  
+
+ ৭. **Abstract Class এবং Inheritance**
+   একটি `Payment` নামে abstract ক্লাস তৈরি করুন যাতে `processPayment()` নামে একটি মেথড থাকবে।
+`CreditCardPayment` এবং `PaypalPayment` নামে দুটি ক্লাস তৈরি করুন, যেগুলো `Payment` ক্লাস থেকে inherit করবে 
+এবং তাদের নিজেদের `processPayment()` মেথড ওভাররাইড করবে।  
+
+ ৮. **Interfaces এবং Inheritance**
+   একটি `Printable` ইন্টারফেস তৈরি করুন যাতে `printDetails()` নামে একটি মেথড থাকবে। একটি `Book` ক্লাস এবং একটি `Magazine` ক্লাস তৈরি করুন,
+যেগুলো `Printable` ইন্টারফেস ইমপ্লিমেন্ট করবে এবং আলাদা আলাদা তথ্য প্রিন্ট করবে।  
+
+ ৯. **Protected Access Modifier**
+   একটি `Parent` ক্লাস তৈরি করুন, যেখানে একটি `protected` প্রোপার্টি থাকবে। তারপর একটি `Child` ক্লাস তৈরি করুন
+যা `Parent` থেকে inherit করবে এবং সেই প্রোপার্টি অ্যাক্সেস করে তার মান পরিবর্তন করবে।  
+
+ ১০. **Composition vs Inheritance**
+   একটি `Engine` ক্লাস তৈরি করুন। তারপর একটি `Car` ক্লাস তৈরি করুন যা `Engine` ক্লাসকে composition হিসেবে ব্যবহার করবে।
+পাশাপাশি `Car` ক্লাসকে `Vehicle` থেকে inherit করান।  
 
 ---
 
