@@ -826,5 +826,32 @@ void main() {
 Abstruction:
 ---------
 Ans. 1:
+abstract class Animal {
+  void move();
+}
+
+class Bird extends Animal {
+  @override
+  move() {
+    print("Bird moves with wing");
+  }
+}
+
+class Fish extends Animal {
+  @override
+  move() {
+    print("Fish moves with tail");
+  }
+}
+
+void main() {
+  Bird bird = Bird();
+  bird.move();
+
+  Fish fish = Fish();
+  fish.move();
+}
+--------------------------------------------------------------------------------
+
 
 
