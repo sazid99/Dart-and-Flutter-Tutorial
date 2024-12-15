@@ -658,6 +658,44 @@ void main() {
 }
 -------------------------------------------------------------------------------
 
+Ans. 2:
+class Shape {
+  void area() {}
+}
+
+class Rectangle extends Shape {
+  var height;
+  var width;
+
+  Rectangle(this.height, this.width);
+  @override
+  void area() {
+    var result = height * width;
+    print(result);
+  }
+}
+
+class Circle extends Shape {
+  var radius;
+  static const double PI = 3.14;
+
+  Circle(this.radius);
+  @override
+  void area() {
+    var result = PI * (radius * radius);
+    print(result);
+  }
+}
+
+void main() {
+  Rectangle rectangle = Rectangle(10, 10);
+  rectangle.area();
+
+  Circle circle = Circle(10);
+  circle.area();
+}
+---------------------------------------------------------------------
+
 
 
 
