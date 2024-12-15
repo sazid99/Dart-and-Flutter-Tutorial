@@ -610,6 +610,54 @@ void main() {
   product.quantity = 25;
   print(product.quantity);
 }
----------------------------------------------------------------------------------
+###############################################################################################
+##############################################################################################
+######################################################################################################
+
+Inheritance:
+-------------
+Ans. 1:
+class Animal {
+  void eat() {
+    print("Animal eats ");
+  }
+
+  void sleep() {
+    print("Animal sleeps");
+  }
+}
+
+class Dog extends Animal {
+  void eat() {
+    print("Dog eats ");
+  }
+
+  void sleep() {
+    print("Dog sleeps");
+  }
+}
+
+class Cat extends Animal {
+  void eat() {
+    print("Cat eats ");
+  }
+
+  void sleep() {
+    print("Cat sleeps");
+  }
+}
+
+void main() {
+  Dog dog = Dog();
+  dog.eat();
+  dog.sleep();
+
+  Cat cat = Cat();
+  cat.eat();
+  cat.sleep();
+}
+-------------------------------------------------------------------------------
+
+
 
 
