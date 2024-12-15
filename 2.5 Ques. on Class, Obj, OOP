@@ -763,7 +763,32 @@ void main() {
 ######################################################################################################
 
 Polimorphism:
+Ans. 1:
+class Animal {
+  void makeSound() {
+    print("Animal make sounds");
+  }
+}
 
+class Dog extends Animal {
+  @override
+  void makeSound() {
+    print("Dog bark");
+  }
+}
+
+class Cat extends Animal {
+  @override
+  void makeSound() {
+    print("Cat Mewoo");
+  }
+}
+
+void main() {
+  Dog().makeSound();
+  Cat().makeSound();
+}
+-----------------------------------------------------------------------
 
 
 
