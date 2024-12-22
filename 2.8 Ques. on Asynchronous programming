@@ -52,4 +52,21 @@ void main() async{
   print(result);
 }
 -----------------------------------------------------------------------
+Ans. 3:
+Future work() async {
+  await Future.delayed(Duration(seconds: 2));
+  print("Done 1");
+  await Future.delayed(Duration(seconds: 2));
+  print("Done 2");
+  await Future.delayed(Duration(seconds: 2));
+  print("Done 3");
+  await Future.delayed(Duration(seconds: 2));
+  print("Done 4");
+}
 
+void main() async {
+  work();
+}
+-----------------------------------------------------------------------
+
+Ans. 
