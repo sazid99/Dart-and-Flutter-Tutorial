@@ -69,4 +69,29 @@ void main() async {
 }
 -----------------------------------------------------------------------
 
-Ans. 
+Ans. 4:
+Future Calculation() async {
+  int task1 = await Future.delayed(Duration(seconds: 1), () {
+    print("return first value");
+    return 1;
+  });
+  int task2 = await Future.delayed(Duration(seconds: 1), () {
+    print("return second value");
+    return 1;
+  });
+  int task3 = await Future.delayed(Duration(seconds: 1), () {
+    print("return third value");
+    return 1;
+  });
+
+  int add = task1 + task2 + task3;
+  print("Addition = $add");
+}
+
+void main() async {
+  Calculation();
+}
+-----------------------------------------------------------------------
+
+Ans. 5:
+
